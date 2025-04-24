@@ -86,6 +86,15 @@ end
 
 -- Iniciando a atualização da TextLabel
 coroutine.wrap(updateTime)(Label)
+local Main = MakeTab({Name = "تحديثات القادمه"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+local Paragraph = AddParagraph(Main, {"الإضافات القادمه"})
+local section = AddSection(Main, {"اضافه اكسوورات أكثر "})
+local section = AddSection(Main, {"اضافه أجسام وارحل أكثر "})
+local section = AddSection(Main, {"اضافه أشياء اخراء"})
 local Main = MakeTab({Name = "الرؤوس والرجل"})
 
 --[[
@@ -1544,86 +1553,195 @@ local Main = MakeTab({Name = "HUNT EGG"})
 --[[
   Name = "Main" <string> Nome da guia
 ]]
-AddButton(Main, {
-  Name = "BABY",
-  Callback = function()
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-  
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-  
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-  
+local Paragraph = AddParagraph(Main, {"قبل لاتشغل سكربت اختار مهمه ياحبيبي"})
+
+local Toggle = AddToggle(Main, {
+  Name = "تجميع بيض",
+  Default = false,
+  Callback = function(Value)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+    
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+    
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+    
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+        
+    wait(0.5)
+    game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
+    
   end
 })
-AddButton(Main, {
-  Name = "متوسط",
-  Callback = function()
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-   
-  wait(0.5)
-  game:GetService("ReplicatedStorage").Remotes.EggCollected:InvokeServer()
-  
+
+--[[
+  Name = "Toggle teste" <string> nome da sua caixa de seleção
+  Default = false <boolean> valor padrão
+  Callback = function(Value)
+    -- função da sua caixa de seleção
   end
-})
+]]
